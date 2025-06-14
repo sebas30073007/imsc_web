@@ -10848,14 +10848,15 @@ p {
   background-color: #EF402C; /* Rojo IBERO */
   padding: 1rem;
   position: absolute;
-  width: 50%;
+  bottom: 0;
+  width: 100%;
   text-align: center;
 }
 
 .scroll-btn {
   background-color: #EF402C;
   color: white;
-  padding: 0.75rem 15rem;
+  padding: 0.25rem 1.5rem;
   font-weight: bold;
   font-size: 1.75rem;
   border-radius: 6px;
@@ -10952,22 +10953,6 @@ header.masthead {
   color: white;
   text-align: center;
   flex-direction: column;
-}
-
-.masthead-content {
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  will-change: opacity, transform;
-}
-
-.masthead-scrolled .masthead-content {
-  opacity: 0;
-  transform: translateY(-50px);
-}
-
-.masthead-scrolled .barra-roja {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 header.masthead .masthead-subheading {

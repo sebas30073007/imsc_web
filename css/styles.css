@@ -10954,6 +10954,23 @@ header.masthead {
   text-align: center;
   flex-direction: column;
 }
+
+.masthead-content {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  will-change: opacity, transform;
+}
+
+.masthead-scrolled .masthead-content {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.masthead-scrolled .barra-roja {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: normal;

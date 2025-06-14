@@ -10844,13 +10844,22 @@ p {
   }
 }
 
+.barra-roja {
+  background-color: #EF402C; /* Rojo IBERO */
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 .scroll-btn {
   background-color: white;
   color: #EF402C;
+  padding: 0.75rem 1.5rem;
   font-weight: bold;
   border-radius: 6px;
   text-decoration: none;
-  width: 100%;
   transition: background 0.3s ease;
 }
 
@@ -10937,19 +10946,17 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
-  text-align: center;
-  color: #fff;
+  height: 100vh;
+  background-image: url("../assets/img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  background-image: url("../assets/img/header-bg.jpg");
-  /*background-repeat: no-repeat;*/
-  /*background-attachment: scroll;*/
-  background-position: center;
-  background-size: cover;
+  position: relative; /* Esto es crucial */
+  color: white;
+  text-align: center;
+  flex-direction: column;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;

@@ -10843,20 +10843,28 @@ p {
     padding: 9rem 0;
   }
 }
-.btn-xl {
-  margin-top: 5rem;
-  display: inline-block;
+
+.barra-roja {
+  background-color: #EF402C; /* Rojo IBERO */
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.scroll-btn {
   background-color: white;
   color: #EF402C;
-  padding: 5rem 5rem;
-  text-decoration: none;
+  padding: 0.75rem 1.5rem;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 6px;
+  text-decoration: none;
   transition: background 0.3s ease;
 }
 
-.btn-xl:hover {
-  background-color: #ef402c;
+.scroll-btn:hover {
+  background-color: #d03428;
   color: white;
 }
 

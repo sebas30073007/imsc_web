@@ -10849,7 +10849,7 @@ p {
   padding: 1rem;
   position: absolute;
   bottom: 0;
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 
@@ -10941,7 +10941,7 @@ p {
   }
 }
 header.masthead {
-  height: 120vh;
+  height: 150vh;
   background-image: url("../assets/img/header-bg.jpg");
   background-size: cover;
   background-position: center;

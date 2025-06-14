@@ -10846,7 +10846,7 @@ p {
 
 .barra-roja {
   background-color: #EF402C; /* Rojo IBERO */
-  padding: 7rem;
+  padding: 5rem;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -10854,18 +10854,13 @@ p {
 }
 
 .scroll-btn {
-  background-color: white;
-  color: #EF402C;
+  background-color: #EF402C;
+  color: white;
   padding: 0.75rem 1.5rem;
   font-weight: bold;
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.3s ease;
-}
-
-.scroll-btn:hover {
-  background-color: #d03428;
-  color: white;
 }
 
 .btn-social {
@@ -10946,7 +10941,7 @@ p {
   }
 }
 header.masthead {
-  height: 100vh;
+  height: 120vh;
   background-image: url("../assets/img/header-bg.jpg");
   background-size: cover;
   background-position: center;

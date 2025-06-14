@@ -10848,15 +10848,14 @@ p {
   background-color: #EF402C; /* Rojo IBERO */
   padding: 1rem;
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  width: 50%;
   text-align: center;
 }
 
 .scroll-btn {
   background-color: #EF402C;
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 15rem;
   font-weight: bold;
   font-size: 1.75rem;
   border-radius: 6px;

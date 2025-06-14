@@ -10844,15 +10844,6 @@ p {
   }
 }
 
-.barra-roja {
-  background-color: #EF402C; /* Rojo IBERO */
-  padding: 5rem;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
 .scroll-btn {
   background-color: white;
   color: #EF402C;
@@ -10860,6 +10851,7 @@ p {
   font-weight: bold;
   border-radius: 6px;
   text-decoration: none;
+  width: 100%;
   transition: background 0.3s ease;
 }
 

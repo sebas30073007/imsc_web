@@ -10858,6 +10858,7 @@ p {
   color: white;
   padding: 0.25rem 1.5rem;
   font-weight: bold;
+  font-size: medium;
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.3s ease;
@@ -10948,7 +10949,7 @@ header.masthead {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; /* Esto es crucial */
+  position: relative;
   color: white;
   text-align: center;
   flex-direction: column;

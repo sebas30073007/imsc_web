@@ -10848,7 +10848,7 @@ p {
   background-color: #EF402C; /* Rojo IBERO */
   padding: 1rem;
   position: absolute;
-  /*bottom: 0;*/
+  bottom: 0;
   width: 100%;
   text-align: center;
 }

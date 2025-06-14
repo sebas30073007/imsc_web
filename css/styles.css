@@ -10941,7 +10941,7 @@ p {
   }
 }
 header.masthead {
-  height: 100vh;
+  height: 120vh;
   background-image: url("../assets/img/header-bg.jpg");
   background-size: cover;
   background-position: center;

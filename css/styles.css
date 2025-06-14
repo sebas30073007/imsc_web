@@ -10962,12 +10962,12 @@ header.masthead {
 
 .masthead-scrolled .masthead-content {
   opacity: 0;
-  /*transform: translateY(-50px);*/
+  transform: translateY(-50px);
 }
 
 .masthead-scrolled .barra-roja {
   opacity: 0;
-  /*transform: translateY(50px);*/
+  transform: translateY(50px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 

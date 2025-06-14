@@ -10846,17 +10846,17 @@ p {
 
 .barra-roja {
   background-color: #EF402C; /* Rojo IBERO */
-  padding: 1rem;
+  padding: 5rem;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 75%;
   text-align: center;
 }
 
 .scroll-btn {
   background-color: #EF402C;
   color: white;
-  padding: 1.75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   font-weight: bold;
   font-size: 1.75rem;
   border-radius: 6px;

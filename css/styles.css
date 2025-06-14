@@ -10847,8 +10847,8 @@ p {
 .barra-roja {
   background-color: #EF402C; /* Rojo IBERO */
   padding: 1rem;
-  position: relative;
-  bottom: 100;
+  position: absolute;
+  /*bottom: 0;*/
   width: 100%;
   text-align: center;
 }

@@ -10870,7 +10870,7 @@ p {
 }
 
 .scroll-btn:hover {
-  text-decoration: underline;
+  text-decoration: ;
 }
 
 .btn-social {
@@ -10971,13 +10971,6 @@ header.masthead {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.masthead-overlay,
-.barra-roja {
-  background-color: #EF402C;
-  padding: 1rem;
-  text-align: center;
 }
 
 .masthead-scrolled .masthead-overlay {

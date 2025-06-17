@@ -10854,14 +10854,21 @@ p {
 }
 
 .scroll-btn {
-  background-color: #EF402C;
+  /*background-color: #EF402C;*/
   color: white;
-  padding: 0.25rem 1.5rem;
+  /*padding: 0.25rem 1.5rem;*/
   font-weight: bold;
   font-size: 1.55rem;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
   text-decoration: none;
-  transition: background 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  /*transition: background 0.3s ease;*/
+}
+
+.scroll-btn:hover {
+  text-decoration: underline;
 }
 
 .btn-social {
@@ -10947,12 +10954,21 @@ header.masthead {
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /*align-items: center;*/
+  justify-content: space-between;
   position: relative;
   color: white;
   text-align: center;
   flex-direction: column;
+}
+
+.masthead-overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* Oscurece la imagen ligeramente */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 header.masthead .masthead-subheading {

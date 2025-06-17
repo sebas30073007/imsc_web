@@ -10823,12 +10823,15 @@ p {
   line-height: 1.75;
 }
 
-.page-section {
-  /*padding: 6rem 0;*/
-  background-color: white; /* o gris claro */
+#services {
+  background-color: white; /* O un gris claro si prefieres */
+  min-height: 100vh;        /* Asegura que la sección cubra toda la pantalla */
   padding: 5rem 2rem;
-  min-height: 100vh; /* importante para tapar visualmente el hero */
   z-index: 1;
+}
+
+.page-section {
+  padding: 6rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;

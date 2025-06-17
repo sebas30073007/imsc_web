@@ -10962,6 +10962,31 @@ header.masthead {
   flex-direction: column;
 }
 
+.masthead-overlay {
+  /*background-color: rgba(0, 0, 0, 0.4); /* Oscurece la imagen ligeramente */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.masthead-overlay,
+.barra-roja {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  will-change: opacity, transform;
+}
+
+.masthead-scrolled .masthead-overlay {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.masthead-scrolled .barra-roja {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: normal;

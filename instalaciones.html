@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- ===== HEAD ===== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mecatrónica | Instalaciones</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- FontAwesome & Google Fonts -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap theme styles -->
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <!-- Pannellum (solo CSS aquí; JS abajo) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+</head>
+
+<body id="page-top">
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logos/new_meca_logo.png" alt="Mecatrónica" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu <i class="fas fa-bars ms-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Admisiones</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Vida Universitaria</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">Academia e Investigación</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Instalaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Empleabilidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO / BANNER ===== -->
+  <header id="masthead">
+    <div class="masthead-overlay">
+      <div class="container">
+        <div class="masthead-heading text-uppercase">Instalaciones</div>
+        <div class="masthead-subheading">Laboratorios, talleres y espacios de creación</div>
+      </div>
+    </div>
+    <div class="barra-roja">
+      <a href="#labs" class="scroll-btn">Explorar</a>
+    </div>
+  </header>
+
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
+  <section class="page-section" id="labs">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Nuestros Espacios</h2>
+        <h3 class="section-subheading text-muted">Haz clic para ver detalles 360°.</h3>
+      </div>
+
+      <div class="row">
+        <!-- Tarjeta 1 -->
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card border-0 shadow">
+            <img src="assets/img/instalaciones/taller-meca-thumb.jpg" class="card-img-top" alt="Taller de Prototipado">
+            <div class="card-body">
+              <h5 class="card-title">Taller de Prototipado</h5>
+              <p class="card-text small">Impresoras 3D de filamento y resina, cortadora láser y herramientas de prototipado rápido.</p>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalProto360">Ver 360°</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card border-0 shadow">
+            <img src="assets/img/instalaciones/robotica-thumb.jpg" class="card-img-top" alt="Labs de Electrónica">
+            <div class="card-body">
+              <h5 class="card-title">Labs de Electrónica</h5>
+              <p class="card-text small">Osciloscopios, multímetros, estaciones de soldadura y mucho más material electrónico</p>
+              <a href="#" class="btn btn-secondary btn-sm disabled">Próximamente</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card border-0 shadow">
+            <img src="assets/img/instalaciones/electronica-thumb.jpg" class="card-img-top" alt="Lab de Automatización">
+            <div class="card-body">
+              <h5 class="card-title">Lab de Automatización</h5>
+              <p class="card-text small">Brazos colaborativos, estaciones de control con módulos de neumática y eléctrica.</p>
+              <a href="#" class="btn btn-secondary btn-sm disabled">Próximamente</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer py-4">
+    <div class="container text-center small">© Mecatrónica Ibero 2025</div>
+  </footer>
+
+  <!-- ========= MODAL 360° (después del contenido) ========= -->
+  <div class="modal fade" id="modalProto360" tabindex="-1" aria-labelledby="proto360Label" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="proto360Label">Taller de Prototipado – Vista 360°</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div id="viewerProto" style="width:100%;height:70vh;background:#000;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ========= /MODAL ========= -->
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <script>
+    // Crear el visor la primera vez que se muestre el modal
+    let protoViewer;
+    const modalEl = document.getElementById('modalProto360');
+
+    modalEl.addEventListener('shown.bs.modal', () => {
+      if (!protoViewer) {
+        protoViewer = pannellum.viewer('viewerProto', {
+          type: 'equirectangular',
+          panorama: 'assets/img/360_img/Taller_de_Prototipado.jpg',
+          autoLoad: true,
+          hfov: 100,
+          yaw: 90,
+          pitch: 0,
+          compass: false,
+          showZoomCtrl: true,
+          showFullscreenCtrl: true
+        });
+      } else {
+        protoViewer.resize();
+      }
+    });
+
+    // Detener movimiento cuando se cierra
+    modalEl.addEventListener('hidden.bs.modal', () => {
+      if (protoViewer) protoViewer.stopMovement();
+    });
+  </script>
+</body>
+</html>

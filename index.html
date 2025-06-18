@@ -16,26 +16,37 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/logos/new_meca_logo.png" alt="..." /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
+                <!-- Logo → siempre lleva al home -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logos/new_meca_logo.png" alt="Mecatrónica" />
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <!--CAMBIAR EL href DE CADA MENú-->
+                        <!-- los hash funcionan porque estamos en index.html -->
                         <li class="nav-item"><a class="nav-link" href="#services">Admisiones</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Vida Universitaria</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Academia e Investigación</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Instalaciones</a></li>
+
+                        <!--  >>> CAMBIO importante: ahora va a la página instalaciones.html  -->
+                        <li class="nav-item"><a class="nav-link" href="instalaciones.html">Instalaciones</a></li>
+
                         <li class="nav-item"><a class="nav-link" href="#contact">Empleabilidad</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <!-- Masthead-->
         <header class="masthead" id="masthead">
             <!-- Contenido centrado -->

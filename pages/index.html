@@ -18,14 +18,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Estilos propios -->
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
     <div class="container-fluid px-lg-4">
       <a class="navbar-brand" href="index.html">
-        <img src="assets/img/logos/new_meca_logo.png" alt="Mecatrónica IBERO">
+        <img src="../assets/img/logos/new_meca_logo.png" alt="Mecatrónica IBERO">
       </a>
 
       <button class="navbar-toggler" type="button"
@@ -85,6 +85,69 @@
   </nav>
 
   <!-- aquí vendrá el resto del contenido -->
+   <!-- === HERO / CARRUSEL === -->
+  <header id="masthead">
+    <div id="heroCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="4000">
+
+      <div class="carousel-inner">
+        <!-- — Slide 1 — -->
+        <div class="carousel-item active bg-cover"
+            style="background-image:url('../assets/img/plan_estudios.jpg');">
+          <div class="overlay"></div>
+          <div class="hero-copy">
+            <h1 class="display-6 fw-bold">VIDA UNIVERSITARIA: Plan de estudios</h1>
+            <p class="lead">Plan ideal de la carrera y recursos estudiantiles</p>
+          </div>
+        </div>
+
+        <!-- — Slide 2 — -->
+        <div class="carousel-item bg-cover"
+            style="background-image:url('../assets/img/grupos_estudiantiles.jpg');">
+          <div class="overlay"></div>
+          <div class="hero-copy">
+            <h1 class="display-6 fw-bold">VIDA UNIVERSITARIA: Grupos estudiantiles</h1>
+            <p class="lead">Equipos y comunidades que potencian tu experiencia IBERO.</p>
+          </div>
+        </div>
+
+        <!-- — Slide 3 — -->
+        <div class="carousel-item bg-cover"
+            style="background-image:url('../assets/img/sociedad_alumnos.jpg');">
+          <div class="overlay"></div>
+          <div class="hero-copy">
+            <h1 class="display-6 fw-bold">VIDA UNIVERSITARIA: Sociedad de alumnos</h1>
+            <p class="lead">Representación, eventos y liderazgo estudiantil.</p>
+          </div>
+        </div>
+
+        <!-- — Slide 4 — -->
+        <div class="carousel-item bg-cover"
+            style="background-image:url('../assets/img/logros_estudiantiles.jpg');">
+          <div class="overlay"></div>
+          <div class="hero-copy">
+            <h1 class="display-6 fw-bold">VIDA UNIVERSITARIA: Logros estudiantiles</h1>
+            <p class="lead">Reconocimientos en concursos, investigación y servicio.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles opcionales (eliminarlos si no los quieres) -->
+      <button class="carousel-control-prev" type="button"
+              data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button"
+              data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </header>
+
 
   <!-- Bootstrap bundle (Popper incluido) -->
   <script
@@ -93,6 +156,6 @@
     crossorigin="anonymous"></script>
 
   <!-- Lógica propia -->
-  <script src="js/scripts.js"></script>
+  <script src="../js/scripts.js"></script>
 </body>
 </html>

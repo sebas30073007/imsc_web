@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Estilos propios -->
-  <link href="../css/styles.css" rel="stylesheet">
+  <link href="../../css/styles.css" rel="stylesheet">
 
 </head>
 
@@ -24,7 +24,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
     <div class="container-fluid px-lg-4">
       <a class="navbar-brand" href="../index.html">
-        <img src="../assets/img/logos/new_meca_logo.png" alt="Mecatrónica IBERO">
+        <img src="../../assets/img/logos/new_meca_logo.png" alt="Mecatrónica IBERO">
       </a>
 
       <button class="navbar-toggler" type="button"
@@ -84,6 +84,56 @@
   </nav>
 
   <!-- aquí vendrá el resto del contenido -->
+  <!-- Galería de logros estudiantiles -->
+  <!-- Galería de logros estudiantiles -->
+  <section id="galeria-logros" class="container-fluid px-0">
+    <div class="row g-0">
+      <!-- Carrusel principal -->
+      <div class="col-lg-9">
+        <div id="carouselLogros" class="carousel slide h-100">
+          <div class="carousel-inner h-100"><!-- Slides vía JS --></div>
+
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button"
+                  data-bs-target="#carouselLogros" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button"
+                  data-bs-target="#carouselLogros" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Columna de miniaturas -->
+      <div class="col-lg-3 p-2 bg-light d-flex flex-column right-panel">
+        <!-- Encabezado fijo -->
+        <header class="thumbs-header">
+          <h3 class="text-uppercase fw-bold mb-2">
+            Proyectos destacados<br>por la coordinación
+          </h3>
+
+          <!-- Frase jesuita -->
+          <p class="small text-muted mb-0 fst-italic">
+            “El amor se ha de poner<br>
+            más en las obras que<br>
+            en las palabras.”<br>
+            — San Ignacio de Loyola —
+          </p>
+        </header>
+
+        <!-- Grid de miniaturas -->
+        <div id="thumbs" class="thumbs-grid flex-grow-1"><!-- se llena vía JS --></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Incluye el script después de Bootstrap -->
+  <script src="../../assets/js/logros.js"></script>
+
+
 
   <!-- Bootstrap bundle (Popper incluido) -->
   <script
@@ -92,6 +142,6 @@
     crossorigin="anonymous"></script>
 
   <!-- Lógica propia -->
-  <script src="../js/scripts.js"></script>
+  <script src="../../js/scripts.js"></script>
 </body>
 </html>

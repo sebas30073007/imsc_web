@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mecatrónica IBERO · Plan de estudios</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+  <!-- Estilos globales -->
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+  <!-- === NAVBAR global (sin cambios) === -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container-fluid px-lg-4">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/img/logos/new_meca_logo.png" alt="Mecatrónica IBERO">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+              aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link fw-bold" href="../admisiones.html">Admisiones</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle active" aria-current="page"
+               href="#" id="vidaDropdown" data-bs-toggle="dropdown" role="button">
+              Vida universitaria
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="vidaDropdown">
+              <li><a class="dropdown-item active" href="plan_estudios.html">Plan de estudios</a></li>
+              <li><a class="dropdown-item" href="grupos_estudiantiles.html">Grupos estudiantiles</a></li>
+              <li><a class="dropdown-item" href="sociedad_alumnos.html">Sociedad de alumnos</a></li>
+              <li><a class="dropdown-item" href="logros_estudiantiles.html">Logros estudiantiles</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" id="academiaDropdown"
+               role="button" data-bs-toggle="dropdown">Academia e investigación</a>
+            <ul class="dropdown-menu" aria-labelledby="academiaDropdown">
+              <li><a class="dropdown-item" href="../academia/academicos.html">Académicos</a></li>
+              <li><a class="dropdown-item" href="../academia/proyectos_investigacion.html">Proyectos · investigación</a></li>
+              <li><a class="dropdown-item" href="../academia/publicaciones.html">Publicaciones</a></li>
+              <li><a class="dropdown-item" href="../academia/logros.html">Logros</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" id="instalacionesDropdown"
+               role="button" data-bs-toggle="dropdown">Instalaciones</a>
+            <ul class="dropdown-menu" aria-labelledby="instalacionesDropdown">
+              <li><a class="dropdown-item" href="../instalaciones/laboratorios.html">Laboratorios</a></li>
+              <li><a class="dropdown-item" href="../instalaciones/equipo.html">Equipo</a></li>
+              <li><a class="dropdown-item" href="../instalaciones/reglamentos.html">Reglamentos</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link fw-bold" href="../empleabilidad.html">Empleabilidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <!-- === PLAN DE ESTUDIOS === -->
+  <section class="page-section" id="plan">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Plan ideal de estudios</h2>
+
+        <!-- Selector de vista -->
+        <div class="d-flex justify-content-center align-items-center" id="viewSelector">
+          <span class="me-2 fw-semibold">Vista:</span>
+          <select id="planView" class="form-select form-select-sm w-auto">
+            <option value="info" selected>Informativa</option>
+            <option value="chain">Seriaciones y prerrequisitos</option>
+            <option value="calc">Calculadora de créditos · horas</option>
+            <option value="peer">De alumnos para alumnos</option>
+          </select>
+        </div>
+
+      <div class="view-divider mx-auto my-3"></div>
+      <!-- Nota informativa (solo para la vista “info”) -->
+      <p id="planNote" class="text-muted small mb-4">
+        Haz <strong>hover</strong> para ver clave / créditos ·
+        <strong>clic</strong> para detalle y copiar la clave.
+      </p>
+
+
+      <!-- ===== Herramientas de la calculadora ===== -->
+      <div id="calcControls" class="d-none">   <!-- oculto por defecto -->
+        <!-- Brochas -->
+        <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
+          <button id="brushDone" type="button"
+                  class="btn btn-outline-danger btn-sm active">
+            <i class="bi bi-brush me-1"></i>Cursado
+          </button>
+          <button id="brushTodo" type="button"
+                  class="btn btn-outline-success btn-sm">
+            <i class="bi bi-brush me-1"></i>Por cursar
+          </button>
+          <button id="brushClear" type="button"
+                  class="btn btn-outline-secondary btn-sm ms-lg-4">
+            <i class="bi bi-eraser-fill me-1"></i>Limpiar
+          </button>
+        </div>
+
+        <!-- Resumen -->
+        <div id="calcSummary" class="small text-center fw-semibold"></div>
+      </div>
+
+
+    </div>
+
+
+      <div id="planGrid" class="mb-5"></div>
+
+      <!-- Descargas -->
+      <div class="d-flex justify-content-center gap-3 flex-wrap my-4">
+        <a href="../assets/pdf/Folleto_MEC.pdf" class="btn btn-danger">
+          <i class="bi bi-download me-2"></i>Folleto de la carrera
+        </a>
+        <a href="../assets/pdf/Optativas_AOC.pdf" class="btn btn-danger">
+          <i class="bi bi-download me-2"></i>Optativas AOC
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer py-4">
+    <div class="container small text-center">© Mecatrónica IBERO 2025</div>
+  </footer>
+
+  <!-- === MODAL info de materia === -->
+  <div class="modal fade" id="courseModal" tabindex="-1" aria-hidden="true"
+       data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="courseModalTitle" class="modal-title">Materia</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"
+                  aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <ul id="courseInfo" class="list-group list-group-flush mb-3"></ul>
+          <h6>Temario tentativo</h6><p id="courseSyllabus" class="small"></p>
+          <h6>Reseña</h6><p id="courseDesc" class="small"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- === Librerías y lógica === -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.5/dist/axios.min.js"></script>
+  <script src="../js/scripts.js"></script> <!-- tu archivo principal -->
+</body>
+</html>

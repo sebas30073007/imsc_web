@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mecatrónica IBERO</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos propios -->
+  <link href="../css/styles.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container-fluid px-lg-4">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/img/logos/new_meca_logo.png" alt="Mecatrónica IBERO">
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+              aria-controls="navbarResponsive" aria-expanded="false"
+              aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item"><a class="nav-link fw-bold" href="../admisiones.html">Admisiones</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" id="vidaDropdown"
+               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Vida universitaria
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="vidaDropdown">
+              <li><a class="dropdown-item" href="../vida_universitaria/plan_estudios.html">Plan de estudios</a></li>
+              <li><a class="dropdown-item" href="../vida_universitaria/grupos_estudiantiles.html">Grupos estudiantiles</a></li>
+              <li><a class="dropdown-item" href="../vida_universitaria/sociedad_alumnos.html">Sociedad de alumnos</a></li>
+              <li><a class="dropdown-item" href="../vida_universitaria/logros_estudiantiles.html">Logros estudiantiles</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" id="academiaDropdown"
+               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Academia e investigación
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="academiaDropdown">
+              <li><a class="dropdown-item" href="../academia/academicos.html">Académicos</a></li>
+              <li><a class="dropdown-item" href="../academia/proyectos_investigacion.html">Proyectos · investigación</a></li>
+              <li><a class="dropdown-item" href="../academia/publicaciones.html">Publicaciones</a></li>
+              <li><a class="dropdown-item" href="../academia/logros.html">Logros</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-bold dropdown-toggle" href="#" id="instalacionesDropdown"
+               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Instalaciones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="instalacionesDropdown">
+              <li><a class="dropdown-item" href="../instalaciones/laboratorios.html">Laboratorios</a></li>
+              <li><a class="dropdown-item" href="../instalaciones/equipo.html">Equipo</a></li>
+              <li><a class="dropdown-item" href="../instalaciones/reglamentos.html">Reglamentos</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link fw-bold" href="../empleabilidad.html">Empleabilidad</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- aquí vendrá el resto del contenido -->
+  <!-- Galería de logros estudiantiles -->
+  <!-- Galería de logros estudiantiles -->
+  <section id="galeria-logros" class="container-fluid px-0">
+    <div class="row g-0">
+      <!-- Carrusel principal -->
+      <div class="col-lg-9">
+        <div id="carouselLogros" class="carousel slide h-100">
+          <div class="carousel-inner h-100"><!-- Slides vía JS --></div>
+
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button"
+                  data-bs-target="#carouselLogros" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button"
+                  data-bs-target="#carouselLogros" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Columna de miniaturas -->
+      <div class="col-lg-3 p-2 bg-light d-flex flex-column right-panel">
+        <!-- Encabezado fijo -->
+        <header class="thumbs-header">
+          <h3 class="text-uppercase fw-bold mb-2">
+            Proyectos destacados<br>por la coordinación
+          </h3>
+
+          <!-- Frase jesuita -->
+          <p class="small text-muted mb-0 fst-italic">
+            “El amor se ha de poner<br>
+            más en las obras que<br>
+            en las palabras.”<br>
+            — San Ignacio de Loyola —
+          </p>
+        </header>
+
+        <!-- Grid de miniaturas -->
+        <div id="thumbs" class="thumbs-grid flex-grow-1"><!-- se llena vía JS --></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Incluye el script después de Bootstrap -->
+  <script src="assets/js/logros.js"></script>
+
+
+
+  <!-- Bootstrap bundle (Popper incluido) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+  <!-- Lógica propia -->
+  <script src="../js/scripts.js"></script>
+</body>
+</html>

@@ -146,7 +146,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   /* ----------- Cargar plan ----------- */
-  axios.get('../vida_universitaria/plan_de_estudios.json')
+  axios.get('../assets/data/plan_de_estudios.json')
     .then(res => {
       res.data.semesters.forEach(sem => {
         const col = document.createElement('div'); col.className = 'sem-col';
@@ -298,7 +298,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', async () => {
-  const dataUrl   = 'logros.json';
+  const dataUrl   = '../assets/data/logros.json';
   const thumbsBox = document.getElementById('thumbs');
   const inner     = document.querySelector('#carouselLogros .carousel-inner');
   const response  = await fetch(dataUrl);

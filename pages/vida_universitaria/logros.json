@@ -1,0 +1,92 @@
+[
+  {
+    "img": "../../assets/img/logros/1.jpeg",
+    "title": "Robot seguidor de línea",
+    "desc": "1.º lugar en la competencia nacional de robótica 2025."
+  },
+  {
+    "img": "../../assets/img/logros/2.jpeg",
+    "title": "Sistema pick-and-place",
+    "desc": "Brazo SCARA que clasifica 120 pzs/min en línea de producción."
+  },
+  {
+    "img": "../../assets/img/logros/3.jpeg",
+    "title": "Drone de inspección",
+    "desc": "Vehículo aéreo para monitoreo de cableado de media tensión."
+  },
+  {
+    "img": "../../assets/img/logros/4.jpeg",
+    "title": "Impresora 3D casera",
+    "desc": "Construida 100 % con refacciones locales; volumen 220×220 mm."
+  },
+  {
+    "img": "../../assets/img/logros/5.jpeg",
+    "title": "Brazo colaborativo",
+    "desc": "Robot 6-DoF certificado para trabajo cerca de operarios."
+  },
+  {
+    "img": "../../assets/img/logros/6.jpeg",
+    "title": "Prótesis mioeléctrica",
+    "desc": "Integra EMG + IA para agarres precisos de baja latencia."
+  },
+  {
+    "img": "../../assets/img/logros/7.jpeg",
+    "title": "Vehículo autónomo mini",
+    "desc": "Corre 1 km indoor con SLAM y evasión de obstáculos."
+  },
+  {
+    "img": "../../assets/img/logros/8.jpeg",
+    "title": "Estación meteorológica IoT",
+    "desc": "Sensores LoRaWAN + dashboard en tiempo real."
+  },
+  {
+    "img": "../../assets/img/logros/9.jpeg",
+    "title": "Rover exploratorio",
+    "desc": "Plataforma todoterreno para muestreo de suelo volcánico."
+  },
+  {
+    "img": "../../assets/img/logros/10.jpeg",
+    "title": "Plataforma de domótica",
+    "desc": "Control integral de vivienda vía MQTT y Home-Assistant."
+  },
+  {
+    "img": "../../assets/img/logros/11.jpeg",
+    "title": "Riego inteligente",
+    "desc": "Ahorro de 40 % agua con sensores de humedad y predicción clima."
+  },
+  {
+    "img": "../../assets/img/logros/12.jpeg",
+    "title": "UAV VTOL",
+    "desc": "Despegue vertical y crucero de 60 km para mensajería médica."
+  },
+  {
+    "img": "../../assets/img/logros/13.jpeg",
+    "title": "Carrito auto-estabilizado",
+    "desc": "Inverted-pendulum que mantiene equilibrio a 12 m/s."
+  },
+  {
+    "img": "../../assets/img/logros/14.jpeg",
+    "title": "Detector de incendios",
+    "desc": "Visión IR + CNN; 95 % precisión en entornos industriales."
+  },
+  {
+    "img": "../../assets/img/logros/15.jpeg",
+    "title": "Plataforma de telepresencia",
+    "desc": "Control remoto WebRTC + mapeo lidar."
+  },
+  {
+    "img": "../../assets/img/logros/16.jpeg",
+    "title": "Balanza inteligente",
+    "desc": "IoT scale: envía datos nutricionales a app móvil."
+  },
+  {
+    "img": "../../assets/img/logros/17.jpeg",
+    "title": "Robot recolector de basura",
+    "desc": "Clasifica residuos con visión y brazo cartesiano."
+  },
+  {
+    "img": "../../assets/img/logros/18.jpeg",
+    "title": "Sistema solar tracker",
+    "desc": "Seguidor biaxial que mejora 18 % la captación fotovoltaica."
+  }
+]
